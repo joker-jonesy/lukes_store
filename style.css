@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3{
+    margin-bottom: 16px;
+}
+
+nav{
+    height: 60px;
+    background-color: #e8e8e8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+body{
+    padding-top: 60px;
+}
+
+section{
+    min-height: 500px;
+    padding: 8px;
+    background-color: #99acbe;
+}
+
+section:nth-child(even){
+    background-color: aliceblue;
+}
+
+#splash{
+    background-image: url("simba.jpeg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+    height: 500px;
+}
+
+.cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(153, 172, 190, 0.8);
+}
+
+#product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    background-color: white;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 8px;
+}
+
+@media screen and (min-width: 750px) {
+    .product{
+        width: 350px;
+    }
+}
